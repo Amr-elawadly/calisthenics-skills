@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthenics Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        fieldset {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 7px double #d9534f;
+            background-color: #222;
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d9534f;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        label {
+            font-size: 16px;
+            color: #ddd;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], input[type="submit"], input[type="reset"], textarea, select {
+            width: 98%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #555;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #d9534f;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #c9302c;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #555;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+      
+        label:hover {
+            color: #d9534f;
+            cursor: pointer;
+        }
+
+      
+        input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #d9534f;
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+        }
+
+       
+        h3 {
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Your Way to Be Strong</legend>
+
+        <form>
+            <label for="txt">Username</label>
+            <input type="text" id="txt" placeholder="Write your name" required autofocus>
+            <br>
+
+            <label for="emaill">Email</label>
+            <input type="email" id="emaill" placeholder="Real email please" required>
+            <br>
+
+            <label for="pas">Phone Number</label>
+            <input type="number" id="pas" placeholder="11 character" required>
+            <br>
+
+            <label for="num">Age</label>
+            <input type="number" id="num" placeholder="Greater than 16" required>
+            <br>
+
+            <h4>Choose your gender:</h4>
+            <input type="radio" id="rad1" name="gender">
+            <label for="rad1">Male</label>
+            <input type="radio" id="rad2" name="gender">
+            <label for="rad2">Female</label>
+            <br>
+
+            <h4>Choose your favorite skill:</h4>
+            <input type="checkbox" id="check1">
+            <label for="check1">Planche</label>
+            <br>
+
+            <input type="checkbox" id="check2">
+            <label for="check2">Front Lever</label>
+            <br>
+
+            <input type="checkbox" id="check3">
+            <label for="check3">Back Lever</label>
+            <br>
+
+            <input type="checkbox" id="check4">
+            <label for="check4">90 Degree Hold</label>
+            <br>
+
+            <h4>Choose your weight range:</h4>
+            <select>
+                <option>50KG-60KG</option>
+                <option>60KG-70KG</option>
+                <option>70KG-80KG</option>
+                <option>80KG-90KG</option>
+            </select>
+            <br>
+
+            <h4>Leave a comment (optional):</h4>
+            <textarea placeholder="Write your comment (optional)" maxlength="50" minlength="5"></textarea>
+            <br>
+
+            <input type="submit" value="Sign Up">
+            <input type="reset" value="Re-enter">
+        </form>
+    </fieldset>
+
+</body>
+</html>
